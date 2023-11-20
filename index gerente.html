@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDEFCcI31HcUmWJ5Ew-UDlYPdx8wYzLQf4",
+            authDomain: "servidores2ano.firebaseapp.com",
+            databaseURL: "https://servidores2ano-default-rtdb.firebaseio.com",
+            projectId: "servidores2ano",
+            storageBucket: "servidores2ano.appspot.com",
+            messagingSenderId: "740076497144",
+            appId: "1:740076497144:web:47f2cb65db82b4ebe6730d",
+            measurementId: "G-X0V6H3GQQD"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consultagerente.js"></script>
+        <link rel="stylesheet" href="lan.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index .html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index gerente.html">Gerentes</a>
+                  </li>
+            </div>
+          </nav>
+        <table id="tbAlunos">
+            <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>email</th>
+                <th>telefone</th>
+                <th>cpf</th>
+                <th>numero</th>
+                <th>profissão</th>
+                <th>endereço</th>
+            </tr>
+        </table>
+    </body>
+</html>
